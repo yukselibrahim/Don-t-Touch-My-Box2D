@@ -25,10 +25,28 @@ public class bomba : MonoBehaviour
 
             gameKontrol.GetComponent<GameKontrol>().Ses_ve_Efekt_Olustur(1,collision.gameObject);
 
-          
+            Destroy(gameObject);
+            
+        }
+
+        if (collision.gameObject.CompareTag("Oyuncu2Kule"))
+        {
+
+            gameKontrol.GetComponent<GameKontrol>().Ses_ve_Efekt_Olustur(1, collision.gameObject);
+            gameKontrol.GetComponent<GameKontrol>().Darbe_vur(2,darbeGucu);
 
             Destroy(gameObject);
-            //GetComponent<CircleCollider2D>().isTrigger = false;
+           
+        }
+
+        if (collision.gameObject.CompareTag("Oyuncu1Kule"))
+        {
+
+            gameKontrol.GetComponent<GameKontrol>().Ses_ve_Efekt_Olustur(1, collision.gameObject);
+            gameKontrol.GetComponent<GameKontrol>().Darbe_vur(1, darbeGucu);
+
+            Destroy(gameObject);
+
         }
     }
 
