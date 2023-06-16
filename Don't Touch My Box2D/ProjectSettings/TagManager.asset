@@ -9,6 +9,9 @@ TagManager:
   - DigerKutular
   - GameKontrol
   - FxTemporaire
+  - Zemin
+  - Oyuncu1
+  - Oyuncu2
   layers:
   - Default
   - TransparentFX
